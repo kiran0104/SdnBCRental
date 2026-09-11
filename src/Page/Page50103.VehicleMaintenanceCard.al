@@ -36,7 +36,7 @@ page 50103 "SDN Vehicle Maintenance Card"
                     MultiLine = true;
                     ToolTip = 'Specifies the repair or maintenance work details.';
                 }
-                field("Next Serce Date"; Rec."Next Service Date")
+                field("Next Service Date"; Rec."Next Service Date")
                 {
                     ApplicationArea = All;
                     ToolTip = 'Specifies the due date for the next repair or service.';
