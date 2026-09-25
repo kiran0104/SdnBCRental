@@ -8,11 +8,11 @@ This repository now includes a GitHub Copilot custom agent setup for repo-specif
 
 ### Configuration files
 
-- `/home/runner/work/SdnBCRental/SdnBCRental/.github/copilot-instructions.md`
+- `.github/copilot-instructions.md`
   - defines the agent role, expected inputs, outputs, and safety guardrails
-- `/home/runner/work/SdnBCRental/SdnBCRental/.github/instructions/al.instructions.md`
+- `.github/instructions/al.instructions.md`
   - adds AL-specific coding guidance for files under `src/**/*.al`
-- `/home/runner/work/SdnBCRental/SdnBCRental/.github/workflows/copilot-setup-steps.yml`
+- `.github/workflows/copilot-setup-steps.yml`
   - prepares the Copilot cloud agent environment with minimal permissions and deterministic checks
 
 ### How to use it
