@@ -1,0 +1,41 @@
+name: Copilot Setup Steps
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+      - .github/copilot-instructions.md
+      - .github/instructions/**
+  pull_request:
+    paths:
+      - .github/workflows/copilot-setup-steps.yml
+      - .github/copilot-instructions.md
+      - .github/instructions/**
+
+jobs:
+  copilot-setup-steps:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Verify repository layout
+        run: |
+          test -d src
+          test -d src/Table
+          test -d src/Page
+          test -d src/Enum
+
+      - name: Summarize AL object files
+        run: |
+          echo "AL object files found:"
+          find src -type f -name '*.al' | sort
+
+      - name: Confirm custom agent files
+        run: |
+          test -f .github/copilot-instructions.md
+          test -f .github/instructions/al.instructions.md
