@@ -14,4 +14,8 @@ enum 50103 "SDN Vehicle Ownership Type"
     {
         Caption = 'Customer Owned';
     }
+    value(3; Lease)
+    {
+        Caption = 'Lease';
+    }
 }
