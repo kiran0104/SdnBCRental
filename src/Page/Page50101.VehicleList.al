@@ -57,7 +57,7 @@ page 50101 "SDN Vehicle List"
                 field("Ownership Type"; Rec."Ownership Type")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies whether the vehicle is Company Owned or Customer Owned.';
+                    ToolTip = 'Specifies whether the vehicle is company owned, leased, or customer owned.';
                 }
                 field("Owner Name"; Rec."Owner Name")
                 {

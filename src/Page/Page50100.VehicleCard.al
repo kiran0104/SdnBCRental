@@ -101,7 +101,7 @@ page 50100 "SDN Vehicle Card"
                 field("Ownership Type"; Rec."Ownership Type")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Specifies whether the vehicle is Company Owned or provided by an external customer for rental.';
+                    ToolTip = 'Specifies whether the vehicle is company owned, leased, or provided by an external customer for rental.';
                 }
                 field("Owner Name"; Rec."Owner Name")
                 {
